@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class AgendaAmigos {
     
-    private final List<Amigo> amigos = new ArrayList<>();
+    private final List<Amigos> amigos = new ArrayList<>();
 
     public void agregarAmigos(Amigos amigo) {
         for (Amigos a : amigos) {
