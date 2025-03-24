@@ -12,19 +12,19 @@ public class AgendaAmigos {
     
     private final List<Amigo> amigos = new ArrayList<>();
 
-    public void agregarAmigo(Amigo amigo) {
-        for (Amigo a : amigos) {
+    public void agregarAmigos(Amigos amigo) {
+        for (Amigos a : amigos) {
             if (a.getCorreo().toLowerCase().equals(amigo.getCorreo().toLowerCase())) {
                 System.out.println("El amigo con correo " + amigo.getCorreo() + " ya está registrado.");
                 return;
             }
         }
         amigos.add(amigo);
-        System.out.println("Amigo agregado exitosamente.");
+        System.out.println("Amigo agregado.");
     }
 
-    public Amigo buscarAmigo(String email) {
-        for (Amigo a : amigos) {
+    public Amigos buscarAmigo(String email) {
+        for (Amigos a : amigos) {
             if (a.getCorreo().toLowerCase().equals(email.toLowerCase())) {
                 return a;
             }

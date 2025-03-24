@@ -2,14 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 /**
  *
  * @author Usuario
  */
-public class Amigos {
 
-// Clase Amigo simplificada
+// Clase Amigo
+class Amigos {
     private final String nombre;
     private final String telefono;
     private final String email;
@@ -20,7 +22,15 @@ public class Amigos {
         this.email = email;
     }
 
-    public String getEmail() {
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public String getCorreo() {
         return email;
     }
 
@@ -29,5 +39,3 @@ public class Amigos {
         return "Nombre: " + nombre + "\nTeléfono: " + telefono + "\nCorreo: " + email;
     }
 }
-    
-
