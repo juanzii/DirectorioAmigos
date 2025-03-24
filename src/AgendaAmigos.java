@@ -23,7 +23,7 @@ public class AgendaAmigos {
         System.out.println("Amigo agregado.");
     }
 
-    public Amigos buscarAmigo(String email) {
+    public Amigos buscarAmigos(String email) {
         for (Amigos a : amigos) {
             if (a.getCorreo().toLowerCase().equals(email.toLowerCase())) {
                 return a;
